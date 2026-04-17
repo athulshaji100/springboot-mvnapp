@@ -33,8 +33,28 @@
         <sonar.projectName>springbootmvnapp</sonar.projectName>
         <sonar.java.source>17</sonar.java.source>
 	</properties>
-	
+
+     <repositories>
+      <repository>
+        <id>maven-releases</id>
+        <url>http://13.235.230.252:8081/repository/maven-releases/</url>
+      </repository>
+    </repositories>
+
+<distributionManagement>
+    <snapshotRepository>
+        <id>maven-snapshots</id>
+        <url>http://13.235.230.252:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+        <id>maven-releases</id>
+        <url>http://13.235.230.252:8081/repository/maven-releases/</url>
+    </repository>
+</distributionManagement>
+
+
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
