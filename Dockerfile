@@ -2,7 +2,7 @@ FROM tomcat:10.1-jdk17
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-COPY *.war /usr/local/tomcat/webapps/
+COPY *.war /usr/local/tomcat/webapps/springbootmvnapp.war
 
 EXPOSE 8080
 
